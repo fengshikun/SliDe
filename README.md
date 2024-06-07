@@ -101,7 +101,7 @@ python -u scripts/train.py --conf examples/ET-QM9-FT_dw_0.2_long_f2d.yaml --laye
 
 ```
 
-Please replace ${QM9_Pretrain_model_path} with the path to the pre-trained model, and ${QM9_data_path} with the path to the fine-tuned data.
+Please replace ```${QM9_Pretrain_model_path}``` with the path to the pre-trained model, and ```${QM9_data_path}``` with the path to the fine-tuned data.
 
 
 - The Script for fine-tuning model for md17
@@ -110,7 +110,7 @@ Please replace ${QM9_Pretrain_model_path} with the path to the pre-trained model
 python -u scripts/train.py --conf examples/ET-MD17_FT-angle_f2d.yaml --dataset-root ${MD17_data_path} --job-id f2d_md17_sample128_frad_multask_Areg_omit_loss_nan_gcv0.5_aspirin --dataset-arg aspirin --pretrained-model ${MD17_pretrain_model_path} --dihedral-angle-noise-scale 20 --position-noise-scale 0.005 --composition true --sep-noisy-node true --bond-length-scale 0.0 --lr 0.0005 --train-loss-type smooth_l1_loss --addh true
 ```
 
-Please replace ${MD17_pretrain_model_path} with the path to the pre-trained model, and ${MD17_data_path} with the path to the fine-tuned data.
+Please replace ```${MD17_pretrain_model_path}``` with the path to the pre-trained model, and ```${MD17_data_path}``` with the path to the fine-tuned data.
 
 
 ## CITE
